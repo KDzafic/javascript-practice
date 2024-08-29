@@ -1,0 +1,39 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+}
+
+.container input {
+    width: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container button {
+    color: white;
+    background-color: rgba(7, 73, 255, 0.871);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: rgba(7, 73, 255, 0.651);
+}
+
+.container button:active {
+    background-color: rgba(7, 73, 255, 0.761);
+}
+
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    margin: auto;
+}

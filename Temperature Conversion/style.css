@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+.container {
+    display: block;
+    text-align: center;
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.329);
+}
+
+.container h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin: auto;
+    padding: auto;
+    color: rgb(67, 139, 255);
+    margin-bottom: 15px;
+}
+
+#temperature-value {
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.container label {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.container button {
+    margin-top: 15px;
+    background-color: rgba(240, 93, 93, 0.63);
+    border: none;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.container button:hover {
+    background-color: rgba(240, 93, 93, 0.514);
+}
+
+.container p {
+    font-size: 1.75em;
+    font-weight: bold;
+}
