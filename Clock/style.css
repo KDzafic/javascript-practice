@@ -1,0 +1,39 @@
+body {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;    
+    background-color: #4f4f4f;
+}
+
+#clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    font-size: 100px;
+}
+
+#weekday {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#weekday p {
+    padding-right: 20px;
+	color: rgba(79, 79, 79, 0.357);
+}
+
+#clock {
+	background-color:#dddddd;
+	box-shadow:0 1px 1px rgba(0,0,0,0.08) inset, 0 1px 1px black;	
+    color:#272e38;
+    padding: 70px;
+    border-radius:6px;
+    border-color:#272e38;	
+    border: 60px white solid;
+}

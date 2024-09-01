@@ -1,0 +1,114 @@
+body {
+    background-color: #31394c;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+  
+    text-align: center;
+    line-height: 59px;
+  
+    padding: 0;
+    margin: 0;
+  }
+
+  .gold {
+    font-weight: 900;
+  
+    color: #f2c94c;
+    text-shadow: 0 0 0px #fff, 0 0 50px #f2c94c;
+  }
+
+  #stopwatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    margin: 10px;
+  }
+
+  #stopwatch span {
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    padding: 75px;
+    font-size: 48px;
+    font-weight: 300;
+  }
+
+  #buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    margin: 20px;
+  }
+
+  #buttons #start {
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+    border: 1px solid #f2c94c;
+    color: #f2c94c;
+    margin: 0;
+    outline: none;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-right: 25px;
+    text-align: center;
+    transition: 0.2s ease;
+    display: inline;
+  }
+
+  #buttons button {
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+    border: 1px solid #fff;
+    color: white;
+    margin: 0;
+    outline: none;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-right: 25px;
+    text-align: center;
+    transition: 0.5s ease;
+    display: none;
+  }
+
+  #buttons #start i {
+    font-size: 50px;
+  }
+
+  #buttons i {
+    font-size: 25px;
+  }
+
+  #buttons #start:hover {
+    background-color: #f2c94c;
+    color: #31394c;
+    border-color: #fff;
+}
+
+#buttons #start:active {
+    background-color: #f2c84cbb;
+    color: #31394c;
+    border-color: #fff;
+}
+
+#buttons button:hover {
+    background-color: #fff;
+    color: #31394c;
+    border-color: #000;
+}
+
+#buttons button:active {
+    background-color: #ffffffa4;
+    color: #31394c;
+    border-color: #000;
+}

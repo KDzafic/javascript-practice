@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+    <h1><span class="gold">GOLD</span> STOPWATCH</h1>
+    <div id="stopwatch">
+        <span id="time">00:00:00:00</span>
+    </div>
+    <div id="buttons">
+        <button onclick="stop()" id="stop"><i class="fa fa-stop"></i></button>
+        <button onclick="start()" id="start"><i class="fa fa-play"></i></button>
+        <button onclick="reset()" id="reset"><i class="fa fa-repeat"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
