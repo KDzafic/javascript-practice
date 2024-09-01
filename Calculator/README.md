@@ -1,6 +1,6 @@
 This is a simple calculator application built with HTML, CSS, and JavaScript. The calculator supports basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
-![brave_mMGKxY1JZu](https://github.com/user-attachments/assets/8510010d-1819-4fc9-bb47-827b28dbb9de)# Calculator
+![calculator](https://github.com/user-attachments/assets/80d80194-9c1b-436e-b037-d5d130315e91)
 
 ## Features
 
