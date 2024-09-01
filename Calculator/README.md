@@ -1,6 +1,8 @@
-# Calculator
+![brave_mMGKxY1JZu](https://github.com/user-attachments/assets/8510010d-1819-4fc9-bb47-827b28dbb9de)# Calculator
 
 This is a simple calculator application built with HTML, CSS, and JavaScript. The calculator supports basic arithmetic operations such as addition, subtraction, multiplication, and division.
+
+![brave_mMGKxY1JZu (online-video-cutter com)](https://github.com/user-attachments/assets/8f5f4c2a-4ecf-49fc-ac42-3fdfd0eabfd1)
 
 ## Features
 
