@@ -2,6 +2,8 @@
 
 Dice Roller is a simple web application that allows users to roll a specified number of dice and displays the results both numerically and visually. The app is built using HTML, CSS, and JavaScript.
 
+![brave_SgoMOQZLCt](https://github.com/user-attachments/assets/d67e80f5-d2e9-498d-894d-39ccd68c8ff9)
+
 ## Features
 
 - **Roll Multiple Dice**: Users can select the number of dice they want to roll, and the application will display the result for each die.
