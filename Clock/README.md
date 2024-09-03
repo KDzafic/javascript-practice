@@ -2,7 +2,7 @@
 
 This project is a simple digital clock built with HTML, CSS, and JavaScript. The clock displays the current time in hours, minutes, and seconds, along with the day of the week.
 
-![clock](https://github.com/user-attachments/assets/d2565d0d-f56c-464c-892f-a42613af2e11)
+![brave_rtmbTny37B](https://github.com/user-attachments/assets/44ff7b08-d947-4a6e-87cf-7fb2aa5cd829)
 
 ## Features
 
