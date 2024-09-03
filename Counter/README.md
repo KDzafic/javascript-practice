@@ -2,6 +2,8 @@
 
 This is a simple counter application built using HTML, CSS, and JavaScript. The application allows the user to increment, decrement, or reset the counter displayed on the screen.
 
+![brave_F9I5nozci2](https://github.com/user-attachments/assets/daefb832-533a-4d69-8720-be51cd890cc0)
+
 ## Features
 
 - **Increment Counter**: Increases the counter value by 1 when the "increase" button is clicked.
