@@ -4,6 +4,8 @@
 
 The Gold Stopwatch is a web-based stopwatch application with a sleek, modern design. This application allows users to start, stop, and reset the stopwatch with precision timing down to milliseconds. The design features a "gold" theme, with interactive buttons styled using CSS transitions.
 
+![brave_ZwNfHm1k7h](https://github.com/user-attachments/assets/b55469d5-988d-4d42-bef0-b516e7458bb8)
+
 ## File Structure
 
 - `index.html`: The main HTML file that sets up the structure of the stopwatch.
