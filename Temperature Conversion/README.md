@@ -2,6 +2,8 @@
 
 Temperature Conversion is a web application that allows users to convert temperatures between Celsius and Fahrenheit. The application is built using HTML, CSS, and JavaScript.
 
+![brave_QOLg4JjVc6](https://github.com/user-attachments/assets/52a8a061-7414-42a1-bc04-f8a21dab7663)
+
 ## Features
 
 - **Celsius to Fahrenheit Conversion**: Converts a given temperature in Celsius to Fahrenheit.
