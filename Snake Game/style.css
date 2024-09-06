@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "VT323", monospace;
+}
+
+body,
+.snake {
+    background-color: #414141;
+}
+
+#gameboard {
+    border-radius: 100px; 
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    margin: 5px; /* if it hits the wall */
+}
+
+.game-border-one {
+    border: #595f43 solid 10px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px #595f43; /* we add this because the 3 borders will not overlap there will be a gap */
+}
+
+.game-border-two {
+    border: #fff4d3 solid 8px;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px #fff4d3; /* we add this because the 3 borders will not overlap there will be a gap */
+}
+
+.game-border-three {
+    border: #8b966c solid 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 10px #8b966c; /* we add this because the 3 borders will not overlap there will be a gap */
+}
+
+.instruction {
+    position: absolute;
+    top: 60%;
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize; /* make all first letters capital*/
+    padding: 30px;
+    margin: 0;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+}
+  
+#score {
+    color: #abb78a;
+  }
+  
+.current-score,
+.high-score {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+  
+.high-score {
+    color: #d8ddca;
+    display: none;
+}
+
+.game-border-three, .logo {
+    background-color: #fff4d3;
+}
+
+.snake {
+    border: #5a5a5a 1px dotted;
+}
+
+.food {
+    background-color: #dedede;
+    border: #999 5px solid;
+}
+
+.logo {
+    position: absolute;
+}
