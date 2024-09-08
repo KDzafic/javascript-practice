@@ -2,7 +2,7 @@
 
 This is a classic Snake Game implemented using HTML, CSS, and JavaScript. The goal of the game is to control the snake and eat as much food as possible without hitting the walls or yourself. The snake grows longer as it eats food, and the game speed increases as the snake gets longer.
 
-![alt text](chrome_T8nXgsZFSS.gif)
+![chrome_T8nXgsZFSS](https://github.com/user-attachments/assets/ed804e7b-5e20-440c-b5cb-f2cbf55ab99e)
 
 ## Features
 
