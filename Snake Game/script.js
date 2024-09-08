@@ -1,5 +1,9 @@
 //html elements
 const board = document.getElementById("gameboard");
+const instructionText = document.getElementById("instruction");
+const logo = document.getElementById("logo")
+const score = document.getElementById("current-score");
+const highScoreText = document.getElementById("high-score");
 
 //variables
 //grid-area:10/10 in center 20x20 is the size of the board
@@ -10,6 +14,7 @@ let direction = 'right';
 let gameIntervalId;
 let gameSpeedDelay = 200;
 let gameStarted = false;
+let highScore = 0;
 
 
 //draw game
@@ -17,6 +22,7 @@ function draw() {
     board.innerHTML = '';
     drawSnake();
     drawFood();
+    updateScore();
 }
 
 //draw snake
@@ -41,14 +47,13 @@ function setPosition(element, position) {
     element.style.gridRow = position.y;
 }
 
-//Testing
-draw();
-
 //create food function
 function drawFood() {
-    const foodElement = createGameElement('div', 'food');
-    setPosition(foodElement, food);
-    board.appendChild(foodElement);
+    if (gameStarted) {
+        const foodElement = createGameElement('div', 'food');
+        setPosition(foodElement, food);
+        board.appendChild(foodElement);
+    }
 }
 
 function generateFood() {
@@ -79,9 +84,11 @@ function move() {
     
     if (head.x == food.x && head.y == food.y) {
         food = generateFood();
-        clearInterval(); //resets the movement and move to not have bugs
+        increaseSpeed();
+        clearInterval(gameIntervalId); //resets the movement and move to not have bugs
         gameIntervalId = setInterval(() => {
             move();
+            checkCollision();
             draw();// to see the new changes new position
         }, gameSpeedDelay) // when it becomes biger increase the speed
     } else {
@@ -89,12 +96,97 @@ function move() {
     }
 }
 
-//test moving
-// setInterval(() => {
-//     move(); 
-//     draw(); // to see the new changes new position
-// },200);
-
+//start game
 function startGame() {
     gameStarted = true; // keep track of running game
+    instructionText.style.display = 'none';
+    logo.style.display = 'none';
+    gameIntervalId = setInterval(() =>{
+        move();
+        checkCollision();
+        draw();
+    },gameSpeedDelay)
+}
+
+document.addEventListener('keydown', handleKeyPress);
+
+// space bar listneer
+function handleKeyPress(event) {
+    if ((!gameStarted && event.code === 'Enter') ||
+        (!gameStarted && event.code === ' ')) {
+        startGame();
+    } else {
+        switch (event.code) {
+            case 'ArrowUp':
+                direction = 'up';
+                break;
+            case 'ArrowDown':
+                direction = 'down';
+                break;
+            case 'ArrowLeft':
+                direction = 'left';
+                break;
+            case 'ArrowRight':
+                direction = 'right';
+                break;
+        }
+    }
+}
+
+function increaseSpeed() {
+    if (gameSpeedDelay > 150) {
+        gameSpeedDelay -= 5;
+    } else if (gameSpeedDelay > 100) {
+        gameSpeedDelay -= 3;
+    } else if (gameSpeedDelay > 50) {
+        gameSpeedDelay -= 2;
+    } else if (gameSpeedDelay > 25) {
+        gameSpeedDelay -= 1;
+    }
+}
+
+function checkCollision() {
+    const head = snake[0];
+    
+    if (head.x < 1 || head.x > gridSize
+        || head.y < 1 || head.y > gridSize) {
+        resetGame();
+    } 
+
+    for (let i = 1; i < snake.length; i++) {
+        if (head.x === snake[i].x && head.y === snake[i].y) {
+            resetGame();
+        }
+    }
+}
+
+function resetGame() {
+    updateHighScore();
+    stopGame();
+    snake = [{ x:10, y:10 }];
+    food = generateFood();
+    direction = 'right';
+    gameSpeedDelay = 200;
+    updateScore();
+}
+
+function updateScore() {
+    const currentScore = snake.length - 1;
+    score.textContent = currentScore.toString().padStart(3, '0')
+}
+
+function updateHighScore() {
+    const currentScore = snake.length - 1;
+    if(currentScore > highScore) {
+        highScore = currentScore;
+        highScoreText.textContent = highScore.toString().padStart(3, '0');
+        highScoreText.style.display = 'block';
+    }
+}
+
+function stopGame() {
+    clearInterval(gameIntervalId);
+    gameStarted = false;
+    instructionText.style.display = 'block';
+    logo.style.display = 'block';
 }
